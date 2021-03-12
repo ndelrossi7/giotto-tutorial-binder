@@ -2,6 +2,7 @@ channels:
   - defaults
   - conda-forge
   - bioconda
+  - Eugene_T
 dependencies:
   - r-base=4.0
   - r-tidyverse
@@ -67,3 +68,9 @@ dependencies:
   - r-cowplot
   - bioconductor-complexheatmap
   - r-clusterr
+  - bioconductor-mast
+  - r-tiff
+  - bioconductor-biomart
+  - r-trendsceek
+  - r-multinet
+  - r-factominer
