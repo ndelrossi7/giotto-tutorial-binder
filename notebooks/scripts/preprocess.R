@@ -31,7 +31,7 @@ my_giotto_object <- adjustGiottoMatrix(gobject = my_giotto_object,
                                        covariate_columns = c('nr_genes', 'total_expr'))
 
 # Calculate highly variable genes
-my_giotto_object <- calculateHVG(gobject = my_giotto_object)
+my_giotto_object <- calculateHVG(gobject = my_giotto_object, show_plot = FALSE)
 
 # Run principal component analysis
 my_giotto_object <- runPCA(gobject = my_giotto_object)
