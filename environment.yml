@@ -71,7 +71,7 @@ dependencies:
   - bioconductor-mast
   - r-tiff
   - bioconductor-biomart
-  - r-trendsceek
+#   - r-trendsceek
   - r-multinet
   - r-factominer
   - r-jackstraw
