@@ -75,3 +75,5 @@ dependencies:
   - r-multinet
   - r-factominer
   - r-jackstraw
+  - bioconductor-scran
+  - bioconductor-mast
