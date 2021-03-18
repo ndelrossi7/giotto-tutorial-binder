@@ -4,6 +4,9 @@ remotes::install_github("RubD/Giotto@cless")
 library(Giotto)
 # Install Giotto environment
 installGiottoEnvironment()
+# load data.table
+library(data.table)
+
 
 # path to data
 visium_path = system.file("extdata", "visium_DG_expr.txt", package = "Giotto")
@@ -43,3 +46,4 @@ my_vis_object <- createNearestNetwork(
 my_vis_object <- doLeidenCluster(
   my_vis_object, 
   name = 'leiden_clus')
+
