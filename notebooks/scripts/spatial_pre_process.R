@@ -16,6 +16,9 @@ conda_path = reticulate::miniconda_path()
                                    pip = TRUE,
                                    python_version = '3.6')
 
+# install spark
+devtools::install_github('xzhoulab/SPARK')
+
 # paths to data
 path_to_matrix = system.file("extdata", "seqfish_field_expr.txt", package = 'Giotto')
 path_to_locations = system.file("extdata", "seqfish_field_locs.txt", package = 'Giotto')
