@@ -5,6 +5,17 @@ library(Giotto)
 # Install Giotto environment
 installGiottoEnvironment()
 
+# Install spatialDE
+conda_path = reticulate::miniconda_path()
+            conda_full_path = paste0(conda_path,'/','bin/conda')
+            full_envname = paste0(conda_path,'/envs/giotto_env')
+            reticulate::py_install(packages = c('NaiveDE', 'patsy', 'SpatialDE'),
+                                   envname = full_envname,
+                                   method = 'conda',
+                                   conda = conda_full_path,
+                                   pip = TRUE,
+                                   python_version = '3.6')
+
 # paths to data
 path_to_matrix = system.file("extdata", "seqfish_field_expr.txt", package = 'Giotto')
 path_to_locations = system.file("extdata", "seqfish_field_locs.txt", package = 'Giotto')
