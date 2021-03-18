@@ -6,7 +6,7 @@ library(Giotto)
 installGiottoEnvironment()
 # load data.table
 library(data.table)
-
+# install quadprog - necessary for DWLS package
 
 # path to data
 visium_path = system.file("extdata", "visium_DG_expr.txt", package = "Giotto")
