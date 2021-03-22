@@ -84,3 +84,16 @@ my_giotto_object <- doLeidenCluster(
 # default name = 'Delaunay_network'
 my_giotto_object = createSpatialNetwork(gobject = my_giotto_object, minimum_k = 2, 
                                     maximum_distance_delaunay = 400)
+
+
+# annotation below
+
+# create vector with cell type names as names of the vector
+clusters_cell_types = c('cell_type_1', 'cell_type_2', 'cell_type_3', 'cell_type_4')
+names(clusters_cell_types) = 1:4 # leiden clustering results
+
+# convert cluster results into annotations and add to cell metadata
+my_giotto_object = annotateGiotto(gobject = my_giotto_object,
+                                         annotation_vector = clusters_cell_types,
+                                         cluster_column = 'leiden_clus', 
+                                         name = 'cell_types')
