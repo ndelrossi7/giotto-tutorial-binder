@@ -78,12 +78,12 @@ dependencies:
   - bioconductor-scran
   - bioconductor-mast
   
-# 
-
-  — pip=3.4
-  — pandas
-  — networkx
+  
+  - pip=3.4
+  - pandas
+  - networkx
   - python-igraph
   - leidenalg
   - python-louvain
   - scikit-learn
+  
