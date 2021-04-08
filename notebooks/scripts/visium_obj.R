@@ -15,7 +15,7 @@ visium_path = system.file("extdata", "visium_DG_expr.txt", package = "Giotto")
 visium_locations = system.file("extdata", "visium_DG_locs.txt", package = "Giotto")
 
 # creating the Giotto object
-my_giotto_object = createGiottoObject(raw_exprs = visium_path,
+my_vis_object = createGiottoObject(raw_exprs = visium_path,
                                       spatial_locs = visium_locations,
                                       instructions = my_instructions)
 
