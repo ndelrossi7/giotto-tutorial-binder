@@ -7,15 +7,14 @@ library(Giotto)
 my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebook/bin/python")
 
 # Install spatialDE
-conda_path = reticulate::miniconda_path()
-            conda_full_path = paste0(conda_path,'/','bin/conda')
-            full_envname = paste0(conda_path,'/envs/giotto_env')
-            reticulate::py_install(packages = c('NaiveDE', 'patsy', 'SpatialDE'),
+conda_path = "/srv/conda"
+conda_full_path = paste0(conda_path,'/','envs/notebook/bin/python')
+full_envname = paste0(conda_path,'/envs/notebook')
+reticulate::py_install(packages = c('NaiveDE', 'patsy', 'SpatialDE'),
                                    envname = full_envname,
                                    method = 'conda',
                                    conda = conda_full_path,
-                                   pip = TRUE,
-                                   python_version = '3.6')
+                                   pip = TRUE)
 
 # install spark
 # devtools::install_github('xzhoulab/SPARK')
