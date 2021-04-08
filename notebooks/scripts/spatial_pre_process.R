@@ -2,8 +2,9 @@
 remotes::install_github("RubD/Giotto@cless")
 # Load Giotto
 library(Giotto)
-# Install Giotto environment
-installGiottoEnvironment()
+
+# python path
+my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebook/bin/python")
 
 # Install spatialDE
 conda_path = reticulate::miniconda_path()
@@ -25,7 +26,8 @@ path_to_locations = system.file("extdata", "seqfish_field_locs.txt", package = '
 
 # creating the Giotto object
 my_giotto_object = createGiottoObject(raw_exprs = path_to_matrix,
-                                      spatial_locs = path_to_locations)
+                                      spatial_locs = path_to_locations,
+                                      instructions = my_instructions)
 
 # filtering the Giotto object
 my_giotto_object <- filterGiotto(gobject = my_giotto_object, 

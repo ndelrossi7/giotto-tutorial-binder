@@ -2,8 +2,10 @@
 remotes::install_github("RubD/Giotto@cless")
 # Load Giotto
 library(Giotto)
-# Install Giotto environment
-installGiottoEnvironment()
+
+# python path
+my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebook/bin/python")
+
 # load data.table
 library(data.table)
 # install quadprog - necessary for DWLS package
@@ -12,9 +14,10 @@ library(data.table)
 visium_path = system.file("extdata", "visium_DG_expr.txt", package = "Giotto")
 visium_locations = system.file("extdata", "visium_DG_locs.txt", package = "Giotto")
 
-# create object
-my_vis_object = createGiottoObject(raw_exprs = visium_path, 
-                                  spatial_locs = visium_locations)
+# creating the Giotto object
+my_giotto_object = createGiottoObject(raw_exprs = visium_path,
+                                      spatial_locs = visium_locations,
+                                      instructions = my_instructions)
 
 # normalize object
 my_vis_object <- normalizeGiotto(gobject = my_vis_object)
