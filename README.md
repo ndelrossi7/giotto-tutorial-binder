@@ -1,17 +1,11 @@
 # [Giotto](https://rubd.github.io/Giotto_site/index.html) Tutorial Binder
 
 ## Table of contents
-1. [What is Binder?](https://github.com/ndelrossi7/giotto-tutorial-binder#what-is-binder) 
-  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A brief overview on what Binder is and how it works in this context
+1. [What is Binder?](https://github.com/ndelrossi7/giotto-tutorial-binder#what-is-binder): *A brief overview on what Binder is and how it works in this context*
 
-2. [Examples and data used](https://github.com/ndelrossi7/giotto-tutorial-binder#examples-and-data-used)
+2. [Examples and data used](https://github.com/ndelrossi7/giotto-tutorial-binder#examples-and-data-used): *Links to the tutorials and data available on the website*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Links to the tutorials and data available on the website
-
-3. [Instructions](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Steps for usage
+3. [Instructions](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions): *Steps for usage*
 
 ----------------------------
 
