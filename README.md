@@ -7,6 +7,8 @@
 
 3. [Instructions](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions): *Steps for usage*
 
+4. [Directory](https://github.com/ndelrossi7/giotto-tutorial-binder#directory): *Easy navigation to the files in this repository*
+
 ----------------------------
 
 ### What is [Binder](https://mybinder.readthedocs.io/en/latest/)?
