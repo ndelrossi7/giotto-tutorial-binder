@@ -1,5 +1,19 @@
 # [Giotto](https://rubd.github.io/Giotto_site/index.html) Tutorial Binder
 
+## Table of contents
+1. [What is Binder?](https://github.com/ndelrossi7/giotto-tutorial-binder#what-is-binder) 
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A brief overview on what Binder is and how it works in this context
+
+2. [Examples and data used](https://github.com/ndelrossi7/giotto-tutorial-binder#examples-and-data-used)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Links to the tutorials and data available on the website
+
+3. [Instructions](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Steps for usage
+
+----------------------------
 
 ### What is [Binder](https://mybinder.readthedocs.io/en/latest/)?
 
@@ -25,9 +39,14 @@ If you want to do some more exploration with the data we used, you can find more
 - [mini Visium](https://rubd.github.io/Giotto_site/articles/mini_visium.html)
 
 ---------------------------
+
 ### Instructions
 1. Click this button: ![Binder](https://mybinder.org/badge_logo.svg)
 2. Wait for your Docker image to be built (if you want to see how this is done, you can click ```Build logs``` to display the running script).
 3. Navigate into the ```Notebooks``` folder and run whichever notebook you like!
 4. Alternatively, navigate into any of the pre-made scripts for a quick look at how some of these steps come together.
 5. If you run into any errors or have any questions about how the functions and scripts work, feel free to raise an [issue](https://github.com/ndelrossi7/giotto-tutorial-binder/issues) with this repository.
+
+-------------------------------
+
+### Directory
