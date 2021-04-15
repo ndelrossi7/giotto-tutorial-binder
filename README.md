@@ -1,5 +1,15 @@
 # [Giotto](https://rubd.github.io/Giotto_site/index.html) Tutorial Binder
---------------------
+
+## Table of contents
+1. [What is Binder?](https://github.com/ndelrossi7/giotto-tutorial-binder#what-is-binder): *A brief overview on what Binder is and how it works in this context*
+
+2. [Examples and data used](https://github.com/ndelrossi7/giotto-tutorial-binder#examples-and-data-used): *Links to the tutorials and data available on the website*
+
+3. [Instructions](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions): *Steps for usage*
+
+4. [Directory](https://github.com/ndelrossi7/giotto-tutorial-binder#directory): *Easy navigation to the files in this repository*
+
+----------------------------
 
 ### What is [Binder](https://mybinder.readthedocs.io/en/latest/)?
 
@@ -13,6 +23,7 @@ By clicking [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.or
   - Because we have set up this repo so that you can import pre-processing scripts, you’ll be able to start with any notebook. If your kernel restarts just launch the Binder again!
 - If you are inactive for 10 minutes, the session will shut down. Otherwise, you’ll have up to 6 hours of usage or 1 cpu-hour for more intensive runs. 
 
+---------------------------
 
 ### Examples and data used
 
@@ -22,3 +33,16 @@ This binder is modeled after the code tutorials in the [HOWTO](https://rubd.gith
 If you want to do some more exploration with the data we used, you can find more information here:
 - [mini seqFISH](https://rubd.github.io/Giotto_site/articles/mini_seqfish.html)
 - [mini Visium](https://rubd.github.io/Giotto_site/articles/mini_visium.html)
+
+---------------------------
+
+### Instructions
+1. Click this button: ![Binder](https://mybinder.org/badge_logo.svg)
+2. Wait for your Docker image to be built (if you want to see how this is done, you can click ```Build logs``` to display the running script).
+3. Navigate into the ```Notebooks``` folder and run whichever notebook you like!
+4. Alternatively, navigate into any of the pre-made scripts for a quick look at how some of these steps come together.
+5. If you run into any errors or have any questions about how the functions and scripts work, feel free to raise an [issue](https://github.com/ndelrossi7/giotto-tutorial-binder/issues) with this repository.
+
+-------------------------------
+
+### Directory
