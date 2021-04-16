@@ -46,3 +46,49 @@ If you want to do some more exploration with the data we used, you can find more
 -------------------------------
 
 ### Directory
+
+[**Notebooks**](https://github.com/ndelrossi7/giotto-tutorial-binder/tree/main/notebooks) Directory of notebooks and scripts detailing the tutorials in this binder
+
+&nbsp;&nbsp;&nbsp;[**Scripts**](https://github.com/ndelrossi7/giotto-tutorial-binder/tree/main/notebooks/scripts) Pre-processing scripts for reference and importing in the more advanced tutorial notebooks
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[*Creating a Giotto Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/scripts/my_giotto_object.R)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[*Pre-processing steps*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/scripts/preprocess.R)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[*Clustered Giotto Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/scripts/clustered_obj.R)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[*Spatial Pre-processed Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/scripts/spatial_pre_process.R)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[*Visium Pre-Processed Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/scripts/visium_obj.R)
+
+&nbsp;&nbsp;&nbsp;[*Creating a Giotto Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/a-Creating-a-Giotto-Object.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Processing and filtering a Giotto Object*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/b-Processing-and-Filtering-Giotto-Object.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Dimensionality Reduction*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/c-Dimensionality-Reduction.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Clustering*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/d-Clustering.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Differentially Expressed Genes*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/e-Differentially-Expressed-Genes.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Annnotation Tools*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/f-Annotation-Tools.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Spatial Enrichment*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/g-Spot-Enrichment-Tools.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Spatial Grid & Network*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/h-Spatial-Grid-or-Network.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Spatial Gene Detection*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/i-Spatial-Gene-Detection.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Spatial Gene Coexpression*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/j-Spatial-Gene-Coexpression.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Hidden Markov Random Field (HMRF)*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/k-Hidden-Markov-Random-Field.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Cell-Cell Interaction*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/l-Cell-Cell-Interaction-Enrichment.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Interaction Changed Genes*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/m-Interaction-Changed-Genes.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Ligand-Receptor Interactions*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/n-Ligand-receptor-interactions.ipynb)
+
+&nbsp;&nbsp;&nbsp;[*Visium Pre-processing*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/o-Visium-Preprocessing.ipynb)
+
+[**Environment file**](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/environment.yml) Anaconda environment file with information on the version of R used and the various packages and dependencies necessary for running Giotto
