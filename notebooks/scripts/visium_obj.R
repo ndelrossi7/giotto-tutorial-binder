@@ -8,7 +8,9 @@ my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebo
 
 # load data.table
 library(data.table)
-# install quadprog - necessary for DWLS package
+
+# install quadprog
+install.packages('quadprog')
 
 # paths to expression and location data
 expr_path = system.file("extdata", "visium_DG_expr.txt", package = 'Giotto')
