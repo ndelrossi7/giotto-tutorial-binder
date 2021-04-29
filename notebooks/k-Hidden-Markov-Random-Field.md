@@ -80,3 +80,18 @@ my_giotto_object <- createGiottoObject(raw_exprs = expr_path,
                                        instructions = my_instructions)
 
 ```
+
+
+### 6. Pre-processing
+The below code block is demonstrating the pre-processing required to run this model. However, make sure that you're doing the necessary steps for your specific data.
+```r
+# Filter 
+my_giotto_object <- filterGiotto(gobject = my_giotto_object,
+                                 expression_threshold = 0.5,
+                                 gene_det_in_min_cells = 20,
+                                 min_det_genes_per_cell = 0)
+
+# Normalize
+my_giotto_object <- normalizeGiotto(gobject = my_giotto_object)
+
+```
