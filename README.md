@@ -37,7 +37,7 @@ If you want to do some more exploration with the data we used, you can find more
 ---------------------------
 
 ### Instructions
-1. Click this button: ![Binder](https://mybinder.org/badge_logo.svg)
+1. Click this button: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ndelrossi7/r-conda-binder/HEAD)
 2. Wait for your Docker image to be built (if you want to see how this is done, you can click ```Build logs``` to display the running script).
 3. Navigate into the ```Notebooks``` folder and run whichever notebook you like!
 4. Alternatively, navigate into any of the pre-made scripts for a quick look at how some of these steps come together.
