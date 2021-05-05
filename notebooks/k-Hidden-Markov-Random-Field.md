@@ -95,3 +95,84 @@ my_giotto_object <- filterGiotto(gobject = my_giotto_object,
 my_giotto_object <- normalizeGiotto(gobject = my_giotto_object)
 
 ```
+
+### 7. Create a spatial network
+This is required for bnSpect methods
+```r
+
+my_giotto_object = createSpatialNetwork(gobject = my_giotto_object, 
+                                        minimum_k = 2)
+```
+
+### 8. binSpect
+Identify genes with a spatial coherent expression profile
+```r
+
+km_spatialgenes = binSpect(my_giotto_object, bin_method = "kmeans")
+
+```
+
+### 9. Create new folder
+This function creates a new folder that stores the data analysis. 
+
+```r
+
+# Create new folder in the current working d rectory
+hmrf_folder = paste0(getwd(), "/", "11_HMRF/")
+# create the folder if it doesn't exist - otherwise it will be overwritten
+if(!file.exists(hmrf_folder)) dir.create(hmrf_folder, recursive = T)
+
+```
+
+### 10. Perform HMRF
+
+```r
+# Select spatial genes
+my_spatial_genes = km_spatialgenes[1:100]$genes
+# Run HMRF
+HMRF_spatial_genes = doHMRF(gobject = my_giotto_object,
+                            expression_values = "scaled",
+                            spatial_genes = my_spatial_genes,
+                            spatial_network_name = "Delaunay_network",
+                            k = 9,
+                            betas = c(28,2,2),
+                            output_folder = paste0(hmrf_folder, 
+                                                   "Spatial_genes/SG_top100_k9_scaled"))
+
+```
+
+### 11. Visualize
+We can visualize our results before adding them to our Giotto object
+
+```r
+
+for(i in seq(28, 30, by = 2)) {viewHMRFresults2D(gobject = my_giotto_object,
+                    HMRFoutput = HMRF_spatial_genes,
+                    k = 9, betas_to_view = i,
+                    point_size = 2)
+}
+
+```
+
+### 12. Add to Giotto Object
+
+```r
+
+my_giotto_object = addHMRF(gobject = my_giotto_object,
+                           HMRFoutput = HMRF_spatial_genes,
+                           k = 9, betas_to_add = c(30),
+                           hmrf_name = "HMRF")
+
+
+```
+
+### 13. Visualize the selected HMRF result
+
+```r
+
+giotto_colors = Giotto:::getDistinctColors(9)
+names(giotto_colors) = 1:9
+spatPlot(gobject = my_giotto_object, cell_color = "HMRF_k9_b.30",
+         point_size = 3, coord_fix_ratio = 1, cell_color_code = giotto_colors)
+
+```
