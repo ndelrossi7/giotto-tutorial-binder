@@ -1,5 +1,5 @@
 # Install Giotto
-remotes::install_github("RubD/Giotto@cless")
+suppressMessages(remotes::install_github("RubD/Giotto@cless", quiet = TRUE))
 # Load Giotto
 library(Giotto)
 
