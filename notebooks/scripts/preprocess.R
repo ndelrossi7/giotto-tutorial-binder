@@ -1,5 +1,5 @@
 # Install Giotto
-remotes::install_github("RubD/Giotto@cless")
+suppressMessages(remotes::install_github("RubD/Giotto@cless", quiet = TRUE))
 # Load Giotto
 library(Giotto)
 
@@ -37,7 +37,7 @@ my_giotto_object <- adjustGiottoMatrix(gobject = my_giotto_object,
 my_giotto_object <- calculateHVG(gobject = my_giotto_object, show_plot = FALSE)
 
 # Run principal component analysis
-my_giotto_object <- runPCA(gobject = my_giotto_object)
+my_giotto_object <- suppressWarnings(runPCA(gobject = my_giotto_object))
 
 # Uniform manifold approximation and projection
 my_giotto_object <- runUMAP(my_giotto_object, dimensions_to_use = 1:5)

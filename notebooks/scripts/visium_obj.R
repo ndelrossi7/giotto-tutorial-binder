@@ -1,5 +1,5 @@
 # Install Giotto
-remotes::install_github("RubD/Giotto@cless")
+suppressMessages(remotes::install_github("RubD/Giotto@cless", quiet = TRUE))
 # Load Giotto
 library(Giotto)
 
@@ -74,7 +74,7 @@ my_visium_object <- calculateHVG(gobject = my_visium_object,
                                  show_plot = FALSE)
 
 # run PCA
-my_visium_object <- runPCA(gobject = my_visium_object)
+my_visium_object <- suppressWarnings(runPCA(gobject = my_visium_object))
 
 # run UMAP
 my_visium_object <- runUMAP(my_visium_object, dimensions_to_use = 1:10)
