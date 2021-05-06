@@ -89,10 +89,10 @@ my_visium_object <- createNearestNetwork(gobject = my_visium_object, dimensions_
 my_visium_object <- doLeidenCluster(gobject = my_visium_object, resolution = 0.4, n_iterations = 1000)
 
 # find SCRAN markers
-scran_markers = findMarkers_one_vs_all(gobject = my_visium_object,
+scran_markers = suppressWarnings(findMarkers_one_vs_all(gobject = my_visium_object,
                                        method = 'scran',
                                        expression_values = 'normalized',
-                                       cluster_column = 'leiden_clus')
+                                       cluster_column = 'leiden_clus'))
 
 # annotate
 cluster_cell_types = c('Gfap_cells', 'Tbr1_cells', 'Tcf7l2_cells', 'Wfs1_cells', 'Nptxr_cells')
