@@ -22,6 +22,8 @@ By clicking [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.or
 - You will have access to 1-2 GB RAM. If you go over 2 GB of RAM the kernel may be restarted.
   - Because we have set up this repo so that you can import pre-processing scripts, you’ll be able to start with any notebook. If your kernel restarts just launch the Binder again!
 - If you are inactive for 10 minutes, the session will shut down. Otherwise, you’ll have up to 6 hours of usage or 1 cpu-hour for more intensive runs. 
+- Any changes that you make will not be saved (please do ***not*** attempt to push your work back to this repository). If you would like to save your progress, please refer to #6 in the [instructions section](https://github.com/ndelrossi7/giotto-tutorial-binder#instructions).
+- Alternatively, if you would like to work on all of this solely locally, you can fork and clone the repository.
 
 ---------------------------
 
@@ -42,6 +44,7 @@ If you want to do some more exploration with the data we used, you can find more
 3. Navigate into the ```Notebooks``` folder and run whichever notebook you like!
 4. Alternatively, navigate into any of the pre-made scripts for a quick look at how some of these steps come together.
 5. If you run into any errors or have any questions about how the functions and scripts work, feel free to raise an [issue](https://github.com/ndelrossi7/giotto-tutorial-binder/issues) with this repository.
+6. If you want to save any of your progress to work on locally, you can download files from the Jupyter notebook directory by clicking the box next to the file name(s) to select it and clicking the ```Download``` button on the top left.
 
 -------------------------------
 
