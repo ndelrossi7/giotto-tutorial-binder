@@ -10,9 +10,9 @@ my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebo
 library(data.table)
 
 # install quadprog
-suppressWarnings(install.packages('quadprog'))
-suppressWarnings(install.packages("ggplot2"))
-suppressWarnings(install.packages("scatterpie"))
+suppressWarnings(suppressMessages(install.packages('quadprog', quiet = TRUE)))
+suppressWarnings(suppressMessages(install.packages('ggplot2', quiet = TRUE)))
+suppressWarnings(suppressMessages(install.packages("scatterpie", quiet = TRUE)))
 library(ggplot2)
 library(scatterpie)
 
