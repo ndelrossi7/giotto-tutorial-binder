@@ -10,11 +10,12 @@ my_instructions = createGiottoInstructions(python_path = "/srv/conda/envs/notebo
 library(data.table)
 
 # install quadprog
-install.packages('quadprog')
-install.packages("ggplot2")
-install.packages("scatterpie")
+suppressWarnings(install.packages('quadprog'))
+suppressWarnings(install.packages("ggplot2"))
+suppressWarnings(install.packages("scatterpie"))
 library(ggplot2)
 library(scatterpie)
+
 
 # paths to expression and location data
 expr_path = system.file("extdata", "visium_DG_expr.txt", package = 'Giotto')
