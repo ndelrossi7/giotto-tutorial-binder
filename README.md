@@ -1,5 +1,7 @@
 # [Giotto](https://rubd.github.io/Giotto_site/index.html) Tutorial Binder
 
+🔴 **Note: Please read the instructions below before launching the Binder as there is some important information about how Binder works and how you can use it optimally.** 🔴
+
 ## Table of contents
 1. [What is Binder?](https://github.com/ndelrossi7/giotto-tutorial-binder#what-is-binder): *A brief overview on what Binder is and how it works in this context*
 
