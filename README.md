@@ -85,7 +85,7 @@ If you want to do some more exploration with the data we used, you can find more
 
   - [*Spatial Gene Coexpression*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/j-Spatial-Gene-Coexpression.ipynb)
 
-  - [*Hidden Markov Random Field (HMRF)*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/k-Hidden-Markov-Random-Field.ipynb)
+  - [*Hidden Markov Random Field (HMRF)*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/k-Hidden-Markov-Random-Field.md) (please note this is a markdown guide to aid in working localy, not a jupyter notebook)
 
   - [*Cell-Cell Interaction*](https://github.com/ndelrossi7/giotto-tutorial-binder/blob/main/notebooks/l-Cell-Cell-Interaction-Enrichment.ipynb)
 
