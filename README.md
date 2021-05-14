@@ -20,7 +20,14 @@ Binder utilizes [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/), [rep
 By clicking [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ndelrossi7/r-conda-binder/HEAD), the environment will automatically be created and you’ll be able to run the jupyter notebooks in this repository on Binder’s servers. 
 
 ##### *Things to note*
-- The first time you build this Binder, it may take while.
+- The first time you build this Binder, it may take while. For some more information on why your session might be taking longer, please refer to this [link](https://mybinder.readthedocs.io/en/latest/about/about.html#what-factors-influence-how-long-it-takes-a-binder-session-to-start).
+  - Below are some commmon messages you might see. They are normal! Just give the Binder some more time to load. 
+
+
+    ```Your session is taking longer than usual to start! Check the log messages below to see what is happening.```
+    
+    
+    ```Launch attempt 1 failed, retrying... Launch attempt 2 failed, retrying...```
 - You will have access to 1-2 GB RAM. If you go over 2 GB of RAM the kernel may be restarted.
   - Because we have set up this repo so that you can import pre-processing scripts, you’ll be able to start with any notebook. If your kernel restarts just launch the Binder again!
 - If you are inactive for 10 minutes, the session will shut down. Otherwise, you’ll have up to 6 hours of usage or 1 cpu-hour for more intensive runs. 
